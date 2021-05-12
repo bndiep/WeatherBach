@@ -6,4 +6,6 @@ A Discord Bot that tells you the weather if you provide it a zipcode. Written in
 ## Commands:
 - !weather {zipcode}: Gives the current weather given the user's zipcode.
   - WIP: Temperature is incredibly high. Need to figure out what values the API is using to get a better temp reading.
+  - The units are in Kelvin by default, so I need to include units parameter and set it to imperial (I know, gross... imperial).
+  - Make spell 'imperial' correctly!
 - !testing: Test command that replies '1, 2, 3!'

@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='!')
 
 def get_weather(zipcode: int):
   # make a 'GET' request that takes an arg of the URL we want to make a request to
-  response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?zip={zipcode},us&appid={weather_api}')
+  response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?zip={zipcode},us&appid={weather_api}&units=imperial')
 
   json_data = json.loads(response.text)
 
