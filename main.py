@@ -45,7 +45,7 @@ async def on_message(message):
 async def weather(ctx, zipcode: int):
   weather_report = get_weather(zipcode)
   await ctx.send(weather_report)
-
+# alternative way to name a command
 @bot.command(name='testing')
 async def call_test(ctx):
   await ctx.send('1, 2, 3!')
